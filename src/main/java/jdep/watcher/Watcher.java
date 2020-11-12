@@ -1,3 +1,8 @@
+/**
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
 package jdep.watcher;
 
 import java.io.Closeable;
@@ -7,6 +12,10 @@ import java.nio.file.WatchService;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.*;
 
+/**
+ * Class is analog to {@link WatchService}.
+ * It provides {@link Event}s and monitor if the removed file a directory or not.
+ */
 public class Watcher implements Closeable {
 
     private final WatchService service;
